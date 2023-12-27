@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Noto+Sans+TC:wght@100;200;300;400;500;600;700;800;900&family=Rampart+One&display=swap');
+
+
+//   font-family: 'Koulen', sans-serif;
+//   font-family: 'Noto Sans TC', sans-serif;
+//   font-family: 'Rampart One', sans-serif;
+
+
+
+$h1 : 50px;
+$h2 : 45px;
+$h3 : 32px;
+$h4 : 24px;
+$body : 18px;
+$label: 16px;
+$label_title : 18px;
+$label_body : 18px;
+$btn-font : 18px;
+$sm-font : 14px;
+
+
+
+
+h1 {
+
+    font-size: $h1;
+    line-height: 30px;
+    letter-spacing: 3%;
+    font-weight: 800;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+h2 {
+
+    font-size: $h2;
+    line-height: 50px;
+    font-weight: 800;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+h3 {
+
+    font-size: $h3;
+    font-weight: 500;
+    line-height: 36px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+h4 {
+
+    font-size: $h4;
+    font-weight: 500;
+    line-height: 28px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.label_body {
+
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+
+}
+
+.label_footer {
+
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+
+}
+
+.enter_year {
+    // border: 1px solid#a81e1e;
+    font-family: "Rampart One";
+    font-size: 48px;
+    color: $gray_font_color;
+    text-align: center;
+
+}
+
+
+
+// component-----------------------
+
+
+.button_check {
+
+    width: 300px;
+    height: 80px;
+    background-color: #ffffff;
+    color: map-get($accent_color, accent_color2);
+    font-size: $h1;
+    font-weight: 900;
+    border-radius: 30px;
+    border: 5px solid map-get($accent_color, accent_color2);
+    box-shadow: 9px 8px 0px 0px #6c96ca94;
+    cursor: pointer;
+
+}
+
+.button_check:hover {
+    transition: transform 0.3s ease;
+    transform: translate(7px, 7px);
+    background-color: map-get($accent_color, accent_color2);
+    color: #ffffff;
+    border-color: #fff;
+    box-shadow: none;
+
+}
+
+.nav_link_top,
+.nav_link_bottom {
+
+    // border: 4px solid#850d0d;
+    width: 80%;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 800;
+    line-height: 30px;
+    color: map-get($accent_color, accent_color2);
+
+}
+
+
+.nav_link_bottom {
+    // border: 4px solid#2d0d85;
+    text-align: right;
+
+}
+
+
+
+.hover_wrap {
+    padding: 0px 20px 20px 20px;
+    border: 1px solid#000000;
+    border-radius: 30px;
+    background: linear-gradient(180deg, #d0eaffcc 0%, rgba(208, 234, 255, 0) 100%),
+        var(--gray-colors-white, #ffffff69);
+    stroke-width: 1px;
+    stroke: #000;
+    filter: drop-shadow(0px 4px 4px #adbbff);
+    display: inline-block;
+
+
+
+    p {
+        padding-left: 5px;
+    }
+
+    h2 {
+        // border: 1px solid#d44b4b;
+        font-family: "Noto Sans TC";
+        font-size: 18px;
+        font-weight: 500;
+        padding: 10px;
+    }
+
+    h1 {
+        // border: 1px solid#d44b4b;
+        font-family: "Noto Sans TC";
+        font-weight: 500;
+        font-size: 30px;
+
+    }
+
+
+    .hover_container {
+
+
+        // border: 10px solid#3bf144;
+        display: flex;
+        align-items: center;
+
+
+
+
+        .bar p {
+            // border: 1px solid#e2f3a3;
+            margin: 0;
+            color: #2d3648;
+            text-align: right;
+            font-family: "Noto Sans TC";
+            font-size: 17px;
+            font-weight: 800;
+            line-height: 20px;
+        }
+
+        h2 {
+            white-space: nowrap;
+        }
+
+        p {
+            font-size: 20px;
+            font-family: "Noto Sans TC";
+            font-weight: 800;
+            padding: 10px;
+
+        }
+
+    }
+
+    .hover_container > img {
+        // border: 1px solid #156cf0;
+        width: 45px;
+        height: 45px;
+      }
+      
+      .bar img {
+        // border: 1px solid #156cf0;
+        width: 105px;
+        height: 15px;
+      }
+}
